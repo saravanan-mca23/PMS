@@ -1,6 +1,6 @@
 const Employee = require('../models/Employee');
 const jwt = require('jsonwebtoken');
-const bcrypt = require('bcrypt');
+const bcrypt = require('bcryptjs');
 
 // Register new employee
 exports.registerEmployee = async (req, res) => {
