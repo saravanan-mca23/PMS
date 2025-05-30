@@ -11,7 +11,7 @@ dotenv.config();
 const app = express();
 
 const corsOptions = {
-  origin: 'http://localhost:5173', // Allow requests from the frontend
+  origin: ['http://localhost:5173','https://pmt-backend-dlg7.onrender.com'], // Allow requests from the frontend
   methods: ['GET', 'POST', 'PUT', 'DELETE'], // Allow specific HTTP methods
   allowedHeaders: ['Content-Type', 'Authorization'], // Allow specific headers
   credentials: true, // Allow cookies or authentication tokens to be sent
